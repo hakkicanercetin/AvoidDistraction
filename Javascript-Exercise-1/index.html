@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: antiquewhite;">
+    <div style="text-align: center;">
+        <button style="" class="button-10" onclick="myFunction2()">Neden Lo-fi Müzik Dinlemelisin?</button>
+        <iframe style="margin: auto;position: absolute;top:15%;right: 0;left: 0;" height="315" src="https://www.youtube.com/embed/7NOSDKb0HlU?si=vxTLTOzmVJscZ1J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div style="position: relative;top: 60%;">
+        <p style="text-align: center;font-size: 1.5rem;">Çalışmaya başladığınızdan beri telefonunuz <span style="font-weight: bolder;font-size: 2rem;">0</span> kere dikkatinizi dağıttı</p>
+        <div style="text-align: center;">
+        <button onclick="myFunction()" class="button-10" style="text-align: center;padding: 1rem;">Arttır</button>
+        </div>
+    </div>
+    <div></div>
+    <script>
+        function myFunction()
+        {
+            let span =document.querySelector("span");
+            let sayac=Number(span.innerHTML);
+            sayac += 1;
+            span.innerHTML=sayac;
+            console.log(sayac)
+        }
+        function myFunction2()
+        {
+            alert("Lo-fi müzik, rahatlatıcı ve hipnotik özellikleriyle bilinen bir tür düşük tempolu hip-hop müziğidir. Beynin rahatlamasına ve odaklanmasına yardımcı olabileceğinden, ders çalışmak isteyen öğrenciler için popüler bir seçenektir.")
+        }
+    </script>
+</body>
+</html>
